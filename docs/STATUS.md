@@ -28,7 +28,7 @@
 ### Docs / git
 - [x] README quick-start with working commands
 - [x] This STATUS.md
-- [ ] Commit + push to `origin/main` (see git history)
+- [x] Commit + push to `origin/main` (`dc88ca1`)
 
 ## Not in P0 (queued)
 - Full kind pod-exec / gVisor sandbox profiles
