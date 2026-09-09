@@ -3,6 +3,8 @@
 Living trail of closed-loop candidates mined from the vulragrag-star OSS atlas (`SYNTHESIS.md`, `SHORTLIST.md`, `data/scored.jsonl` proceed=true, sector surveys).  
 Priority: (1) can the loop stand in production, (2) external prior art beyond GitHub, (3) document every attempt.
 
+**Methodology note (2026-09-09):** expanded from 8 → 30 attempts across research/agents, supply chain, edge/ZT, DevEx, data/ML-ops-lite, networking/DNS, security ops, backup/DR, package ecosystems, WASM, contrib governance, media/docs, homelab, observability, identity. Enumerate-all → filter → prioritize (see `CANDIDATE_BACKLOG.md`, `PRIORITY.md`). Multiple `pursue-candidate` survivors allowed.
+
 Star counts and policies below are from `scored.jsonl` only (no invented stars).
 
 ---
@@ -65,7 +67,7 @@ Production-viable for a personal/small-team lab; not a multi-tenant SaaS without
 - Innovation: composition + provenance UX, not novel crypto/networking.
 
 ### Decision
-**pursue** (narrowed claim only — see REPORT recommendation).
+**pursue-candidate** (narrowed claim only — see PRIORITY.md; one of several survivors).
 
 ---
 
@@ -274,17 +276,735 @@ lab-in-a-box (Kind+Argo+Prom+Kyverno+Trivy/cosign) — **already the assembly**;
 
 ---
 
-## Attempt scoreboard
+## Attempt 9 — Local-first data / ML-ops-lite dataset ledger
+
+### Idea / closed-loop claim
+Personal/small-team dataset → transform → feature snapshot → train/eval stub → metrics archive without Kubeflow: content-addressed datasets, embedded SQL catalog, SQL transforms, metrics archive.
+
+### Can the loop stand?
+**Yes (narrow).** E2E: rclone/opendal land Parquet/CSV → libsql (+ optional duckdb-wasm/datafusion) catalog+transform → task/dagger job → prometheus + litestream → query with prql/yq.
+
+### Parts from atlas
+`tursodatabase/libsql`, `benbjohnson/litestream`, `rclone/rclone`, `apache/opendal`, `apache/datafusion`, `duckdb/duckdb-wasm`, `asg017/sqlite-vec`, `go-task/task`, `dagger/dagger`, `prometheus/prometheus`, `PRQL/prql`, `mikefarah/yq`, `astral-sh/uv`, `replicate/cog`.
+
+### Missing glue
+Dataset identity schema; feature-snapshot promotion UX; non-DuckLake opinionated defaults; training adapters without claiming full MLOps.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| DuckLake | https://ducklake.select/ ; https://github.com/duckdb/ducklake | SQL catalog + Parquet lakehouse (v1.0 Apr 2026) | Strong occupation of lakehouse format |
+| DuckDB MLOps essay | https://medium.com/@Modexa/duckdb-for-mlops-faster-data-prep-without-the-drama-940dcdbad86f | DuckDB as feature staging | Pattern, not product |
+| libSQL DuckLake PoC | https://github.com/duckdb/ducklake/issues/1066 | Turso/libsql catalog backend proposal | Confirms libsql adjacency |
+| Cog | https://github.com/replicate/cog | Model packaging | Part, not dataset ledger |
+
+### Verdict
+**thin-overlap.** Lakehouse format occupied by DuckLake; a personal dataset ledger + atlas sandbox job runner (systems-flavored) is thinner.
+
+### If open/thin: fill-soon / moat / innovation
+- Fill-soon: DuckLake + Turso catalog; MotherDuck-class UX.
+- Moat: atlas proceed pins + multi-runtime job profiles from Attempt 1.
+- Innovation: composition of catalog+job+archive, not new query engine.
+
+### Decision
+**pursue-candidate** (scoped as dataset/experiment ledger sibling to Attempt 1, not another DuckLake).
+
+---
+## Attempt 10 — Personal DNS privacy & policy control plane
+
+### Idea / closed-loop claim
+One product: adblock + recursive privacy resolver + encrypted upstream + local authority + metrics.
+
+### Can the loop stand?
+**Yes.** pi-hole/coredns + unbound + dnscrypt-proxy + smartdns + Prometheus is a known architecture.
+
+### Parts from atlas
+`pi-hole/pi-hole`, `coredns/coredns`, `NLnetLabs/unbound`, `DNSCrypt/dnscrypt-proxy`, `pymumu/smartdns`, `kubernetes-sigs/external-dns`, `prometheus/prometheus`, `miekg/dns`.
+
+### Missing glue
+Installer UX — vendors already ship it.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| AdGuard Home | https://github.com/AdguardTeam/AdGuardHome | Built-in DoH/DoT/DNSCrypt, DHCP, per-client | Occupies all-in-one |
+| Pi-hole + Unbound guides | https://selfhosting.sh/foundations/network-wide-ad-blocking/ | Recipe culture | Commodity |
+| SmartDNS | https://github.com/pymumu/smartdns | Fast multi-upstream resolver | Part |
+| CoreDNS-at-home | https://sarah-robin.com/blog/coredns-at-home | Declarative CoreDNS control plane | Recipe |
+
+### Verdict
+**occupied.**
+
+### If open/thin: fill-soon / moat / innovation
+N/A
+
+### Decision
+**abandon.**
+
+---
+## Attempt 11 — Continuous backup → restore-verify DR loop
+
+### Idea / closed-loop claim
+Backup is not done until scheduled restore into sandbox passes health checks and records RTO evidence.
+
+### Can the loop stand?
+**Yes.** Velero/restic → kind/throwaway NS → checks → Prometheus; litestream+rclone for SQLite path.
+
+### Parts from atlas
+`velero-io/velero`, `rclone/rclone`, `benbjohnson/litestream`, `kubernetes-sigs/kind`, `prometheus/prometheus`, `amir20/dozzle`, `codenotary/immudb`, `go-task/task`.
+
+### Missing glue
+Cross-tool adapter (k8s + SQLite + files) as one product.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| Kymaros | https://kymaros.io/ | Continuous Velero restore validation operator | Occupies k8s restore-verify |
+| Homelab Velero series | https://serard.dev/content/blog/homelab-k8s/32-velero-for-backup.html | Dogfood CronJob recipes | Strong recipes |
+| nXsi Homelab Backup | https://www.nxsi.io/products/homelab-backup-stack | Packaged restic+verify | Product pack |
+| OneUptime Velero DR 2026 | https://oneuptime.com/blog/post/2026-01-27-velero-disaster-recovery/view | DR runbook maturity | Guide |
+
+### Verdict
+**occupied** (k8s) / commodity (homelab packs).
+
+### If open/thin: fill-soon / moat / innovation
+N/A — join Kymaros/nXsi rather than greenfield.
+
+### Decision
+**abandon.**
+
+---
+## Attempt 12 — Local WASM plugin host + registry loop
+
+### Idea / closed-loop claim
+Host apps load untrusted plugins via WASM with capability limits; build/push/test registry for plugins.
+
+### Can the loop stand?
+**Yes** via Extism+wasmtime; product layer already exists (XTP).
+
+### Parts from atlas
+`bytecodealliance/wasmtime`, `extism/extism`, `cloudflare/workerd`, `tinygo-org/tinygo`, `wasm-bindgen/wasm-bindgen`, `youki-dev/youki`, `wasm-micro-runtime/wasm-micro-runtime`.
+
+### Missing glue
+Little — XTP ships registry/CLI.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| Extism | https://extism.org/ | Universal Wasm plugin framework | Strong part |
+| XTP (Dylibso) | https://xtp.dylibso.com/ | Managed marketplace/registry on Extism | Occupies product |
+| Bytes.dev #343 | https://bytes.dev/archives/343 | Market narrative for Extism plugins | Commentary |
+
+### Verdict
+**occupied.**
+
+### If open/thin: fill-soon / moat / innovation
+N/A
+
+### Decision
+**abandon.**
+
+---
+## Attempt 13 — Systems media/docs ingest → durable vault (non-LLM)
+
+### Idea / closed-loop claim
+Fetch/crawl → normalize (images/PDF/HTML) → content-addressed vault → query — without claiming RAG/LLM product.
+
+### Can the loop stand?
+**Partial → yes for personal/research ops.** scrapy/hurl/monolith → ImageMagick/pdf.js → libsql+rclone vault → fselect/yq/prql.
+
+### Parts from atlas
+`scrapy/scrapy`, `Orange-OpenSource/hurl`, `Y2Z/monolith`, `ImageMagick/ImageMagick`, `mozilla/pdf.js`, `tursodatabase/libsql`, `rclone/rclone`, `jhspetersson/fselect`, `mikefarah/yq`, `go-task/task`.
+
+### Missing glue
+Format router + vault schema + dedupe; pandoc not in proceed set (acceptable external).
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| Firecrawl AnyDoc | https://www.firecrawl.dev/blog/anydoc-and-pdf-inspector | Fast local doc→MD parsers | Strong parts, not vault product |
+| ArchiveBox | https://archivebox.io/ | Self-hosted web archive manager | Occupies web archive |
+| DEEP / Zurvan | GitHub local-first AI doc engines | LLM knowledge engines | Occupy LLM axis |
+| AnyDoc pipeline essay | https://medium.com/@info.booststash/i-spent-a-week-building-a-document-pipeline-around-firecrawls-anydoc-here-s-how-to-actually-use-it-e223e102f8ec | Routing pattern | Guide |
+
+### Verdict
+**thin-overlap.** ArchiveBox owns bookmarks/web; AnyDoc owns parsing; a systems vault (hash ledger + transform jobs + offline query, no LLM) is under-productized.
+
+### If open/thin: fill-soon / moat / innovation
+- Fill-soon: ArchiveBox expanding transforms; Firecrawl Parse SaaS.
+- Moat: atlas job runner + content-addressed ledger shared with Attempt 1.
+- Innovation: non-LLM provenance vault UX.
+
+### Decision
+**pursue-candidate.**
+
+---
+## Attempt 14 — Continuous security posture ops loop
+
+### Idea / closed-loop claim
+Cluster/CI continuous scan → triage → admit/deny → evidence store as one product.
+
+### Can the loop stand?
+**Yes** — Kubescape already is that product for k8s.
+
+### Parts from atlas
+`kubescape/kubescape`, `quay/clair`, `wagoodman/dive`, `zizmorcore/zizmor`, `aquasecurity/kube-bench`, `kyverno/kyverno`, `aquasecurity/tracee`, `greenbone/openvas-scanner`.
+
+### Missing glue
+Little for k8s — Kubescape operator covers continuous scan.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| Kubescape | https://kubescape.io/ | CNCF continuous scan/runtime platform | Occupied |
+| Chainloop/GUAC | https://docs.chainloop.dev/ ; https://guac.sh/ | Supply-chain evidence | Occupied (Attempt 2) |
+
+### Verdict
+**occupied.**
+
+### If open/thin: fill-soon / moat / innovation
+N/A
+
+### Decision
+**abandon.**
+
+---
+## Attempt 15 — Small-team identity + secrets spine
+
+### Idea / closed-loop claim
+OIDC IdP + local PKI + sealed secrets + password store as one installer for 5–50 people (avoid hard_ban openbao/kanidm).
+
+### Can the loop stand?
+**Yes.** Zitadel/Dex + step-ca/mkcert + sealed-secrets + gopass.
+
+### Parts from atlas
+`zitadel/zitadel`, `dexidp/dex`, `oauth2-proxy/oauth2-proxy`, `smallstep/certificates`, `FiloSottile/mkcert`, `bitnami/sealed-secrets`, `gopasspw/gopass`, `cert-manager/cert-manager`.
+
+### Missing glue
+Installer UX — vendors and Helm recipes already ship it.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| ZITADEL self-hosted | https://zitadel.com/self-hosted | Full CIAM product | Occupied |
+| Zitadel Helm+secrets guides | https://citizix.com/how-to-deploy-zitadel-on-kubernetes-with-helm-and-traefik/ | IdP+secrets assembly | Recipe |
+
+### Verdict
+**occupied.**
+
+### If open/thin: fill-soon / moat / innovation
+N/A
+
+### Decision
+**abandon.**
+
+---
+## Attempt 16 — Personal web harvest → durable archive
+
+### Idea / closed-loop claim
+Crawl/bookmark ingest → multi-format archive → search/export.
+
+### Can the loop stand?
+**Yes** — ArchiveBox is the product; scrapy pipes in.
+
+### Parts from atlas
+`scrapy/scrapy`, `Y2Z/monolith`, `Orange-OpenSource/hurl`, `rclone/rclone`, `tursodatabase/libsql`.
+
+### Missing glue
+Little — ArchiveBox owns assembly.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| ArchiveBox | https://archivebox.io/ | Self-hosted web archiving | Occupied |
+| ArchiveBox vs Wallabag | https://selfhosting.sh/compare/archivebox-vs-wallabag/ | Category split archive vs read-later | Comparison |
+
+### Verdict
+**occupied.**
+
+### If open/thin: fill-soon / moat / innovation
+N/A
+
+### Decision
+**abandon.**
+
+---
+## Attempt 17 — Python polyglot monorepo DevEx OS
+
+### Idea / closed-loop claim
+One product wrapping uv workspaces + ruff + pytest + hooks + release as Python Cargo.
+
+### Can the loop stand?
+**Partial.** Parts compose; product boundary is recipes + Astral tooling.
+
+### Parts from atlas
+`astral-sh/uv`, `astral-sh/ruff`, `pytest-dev/pytest`, `evilmartians/lefthook`, `typicode/husky`, `conventional-changelog/commitlint`, `go-task/task`, `goreleaser/goreleaser`, `Nuitka/Nuitka`, `PyO3/maturin`.
+
+### Missing glue
+Opinionated monorepo template — already blog-saturated.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| uv workspaces guides 2026 | https://www.danilchenko.dev/posts/uv-workspaces-monorepo/ | Recipe saturation | Guides |
+| Botmonster uv+Ruff monorepo | https://botmonster.com/coding/python-monorepo-uv-workspaces-ruff/ | Production monorepo story | Guide |
+| Pants + uv + Ruff | https://developersvoice.com/blog/python/modern-python-monorepo-uv-ruff-pants-guide/ | Scale monorepo stack | Guide |
+
+### Verdict
+**occupied** (tooling + blogware).
+
+### If open/thin: fill-soon / moat / innovation
+N/A
+
+### Decision
+**abandon.**
+
+---
+## Attempt 18 — Network traffic capture → replay → regress loop
+
+### Idea / closed-loop claim
+Capture prod-like traffic → replay against candidate → diff/regress → evidence.
+
+### Can the loop stand?
+**Yes** with GoReplay; commercial closes AI loop.
+
+### Parts from atlas
+`probelabs/goreplay`, `zeek/zeek`, `Orange-OpenSource/hurl`, `fullstorydev/grpcurl`, `esnet/iperf`, `prometheus/prometheus`, `kubernetes-sigs/kind`.
+
+### Missing glue
+AI triage/PR loop is Speedscale's job.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| GoReplay | https://goreplay.org/ | OSS+PRO traffic replay | Occupies capture/replay |
+| Speedscale BYOC | https://speedscale.com/byoc/ | Closed loop capture→fix→PR | Occupies product |
+| Zeek | https://zeek.org/ | Network monitor | Part |
+
+### Verdict
+**occupied.**
+
+### If open/thin: fill-soon / moat / innovation
+N/A
+
+### Decision
+**abandon.**
+
+---
+## Attempt 19 — Self-hosted edge workers platform (workerd + tunnel + PKI)
+
+### Idea / closed-loop claim
+Local/edge JS/Wasm workers runtime + TLS + private share tunnel as homelab/edge FaaS without Cloudflare control plane.
+
+### Can the loop stand?
+**Partial → yes for single-node.** workerd + caddy/mkcert + zrok/sish + optional wasmtime/extism; operator supplies orchestration.
+
+### Parts from atlas
+`cloudflare/workerd`, `bytecodealliance/wasmtime`, `extism/extism`, `caddyserver/caddy`, `FiloSottile/mkcert`, `openziti/zrok`, `antoniomika/sish`, `cloudflare/cloudflared`, `amir20/dozzle`, `prometheus/prometheus`, `google/gvisor`.
+
+### Missing glue
+Deploy/version control plane; multi-node scheduling; KV/R2 substitutes; sandboxing depth (gVisor/VM per CF guidance).
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| workerd | https://github.com/cloudflare/workerd ; https://blog.cloudflare.com/workerd-open-source-workers-runtime/ | Runtime part, not full platform | Strong part |
+| Self-host workerd analysis | https://flaviocopes.com/workerd/ | Lists missing CF platform pieces | Analysis |
+| Extism/XTP | https://extism.org/ | Plugin layer | Occupied adjacent (Attempt 12) |
+
+### Verdict
+**thin-overlap → open gap (narrow).** Runtime exists; opinionated single-node edge workers OS (pins + tunnel + PKI + logs) is under-productized vs recipes.
+
+### If open/thin: fill-soon / moat / innovation
+- Fill-soon: CF/miniflare ecosystem; Deno self-host.
+- Moat: atlas sandbox defaults (gVisor around workerd) + private share defaults.
+- Innovation: assembly + safety defaults, not new isolate engine.
+
+### Decision
+**pursue-candidate.**
+
+---
+## Attempt 20 — Immutable ops evidence / audit ledger
+
+### Idea / closed-loop claim
+Every lab run, deploy, restore-test, and scan writes tamper-evident evidence with client verification — personal/small-team ops notary.
+
+### Can the loop stand?
+**Yes.** immudb ingest from Task/CI + optional libsql index + litestream/rclone mirror + asciinema attachments.
+
+### Parts from atlas
+`codenotary/immudb`, `tursodatabase/libsql`, `benbjohnson/litestream`, `rclone/rclone`, `asciinema/asciinema`, `prometheus/prometheus`, `go-task/task`, `google/trillian`.
+
+### Missing glue
+Opinionated evidence schema for systems-lab events; verify CLI UX; retention policies.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| immudb | https://immudb.io/ ; BusinessWire 2026 1.11 audit logging | Immutable DB + audit feature | Strong database part |
+| PGaudit+immudb | https://immudb.io/blog/pgaudit-and-immudb-the-dynamic-duo-for-tamper-proof-postgresql-audit-trails | PG trail pattern | Pattern |
+| Chainloop | https://docs.chainloop.dev/ | SSCS evidence store | Occupies supply-chain, not general lab ops |
+
+### Verdict
+**thin-overlap.** immudb occupies storage; Chainloop occupies SSCS; a systems-lab evidence notary composing atlas runs is open-ish.
+
+### If open/thin: fill-soon / moat / innovation
+- Fill-soon: immudb examples; Chainloop broadening.
+- Moat: schema tied to Attempt 1 run identity + atlas policy.
+- Innovation: productized verify UX for lab/ops events.
+
+### Decision
+**pursue-candidate.**
+
+---
+## Attempt 21 — Polyglot toolchain capsule (devbox/nix/uv/bun)
+
+### Idea / closed-loop claim
+One product that pins polyglot toolchains reproducibly for any repo.
+
+### Can the loop stand?
+**Yes** — Devbox/Nix already are the product.
+
+### Parts from atlas
+`jetify-com/devbox`, `NixOS/nix`, `pkgxdev/pkgx`, `astral-sh/uv`, `oven-sh/bun`, `nvm-sh/nvm`, `volta-cli/volta`, `mamba-org/mamba`.
+
+### Missing glue
+Little.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| Devbox vs Nix 2026 | https://briandetering.net/2026/05/28/best-dev-environment-managers-2026/ | Devbox/Nix/mise crowned | Occupied |
+| 1337skills env managers | https://1337skills.com/blog/2026-07-18-reproducible-dev-environments-2026-devbox-devenv-devpod/ | Market map | Occupied |
+
+### Verdict
+**occupied.**
+
+### If open/thin: fill-soon / moat / innovation
+N/A
+
+### Decision
+**abandon.**
+
+---
+## Attempt 22 — Homelab GitOps lite (revisit of Attempt 8)
+
+### Idea / closed-loop claim
+Minimal Flux+kind+secrets+logs without full platform-in-a-box teaching stack.
+
+### Can the loop stand?
+**Yes**, but lab-in-a-box and tutorials already cover it.
+
+### Parts from atlas
+`kubernetes-sigs/kind`, `fluxcd/flux2`, `bitnami/sealed-secrets`, `stakater/Reloader`, `amir20/dozzle`, `prometheus/prometheus`.
+
+### Missing glue
+Little.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| lab-in-a-box | https://github.com/BubblyWolf/lab-in-a-box | Kind+Argo+Prom+Kyverno assembly | Occupied |
+
+### Verdict
+**occupied.**
+
+### If open/thin: fill-soon / moat / innovation
+N/A
+
+### Decision
+**abandon.**
+
+---
+## Attempt 23 — Multi-protocol API contract harness (HTTP + gRPC + ledger)
+
+### Idea / closed-loop claim
+Local-first: Hurl scenarios + grpcurl probes + optional traffic snippets → hermetic run → diff ledger → promote/reject — without becoming Speedscale.
+
+### Can the loop stand?
+**Yes (narrow).** hurl for HTTP; grpcurl for gRPC smoke; task/dagger orchestrates; results in libsql+litestream; optional goreplay fixture import.
+
+### Parts from atlas
+`Orange-OpenSource/hurl`, `fullstorydev/grpcurl`, `go-task/task`, `dagger/dagger`, `tursodatabase/libsql`, `benbjohnson/litestream`, `probelabs/goreplay`, `mikefarah/yq`, `kubernetes-sigs/kind`.
+
+### Missing glue
+Unified scenario format bridging Hurl+gRPC; golden response store; breaking-change report UX (Buf external OK).
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| Hurl | https://hurl.dev/ ; GitHub issue #3411 | HTTP scenario part; gRPC still roadmap | Strong HTTP part |
+| grpcurl | https://github.com/fullstorydev/grpcurl | gRPC curl part, not test harness | Part |
+| QASkills gRPC 2026 | https://qaskills.sh/blog/grpc-api-testing-complete-guide-2026 | Recipe: grpcurl+ghz+buf | Guide |
+| Speedscale / GoReplay | https://speedscale.com/ ; https://goreplay.org/ | Traffic replay occupied | Different claim |
+
+### Verdict
+**thin-overlap → open gap.** Parts exist; unified HTTP+gRPC contract harness with content-addressed run ledger is not a widely adopted OSS product.
+
+### If open/thin: fill-soon / moat / innovation
+- Fill-soon: Hurl gRPC support; Bruno/Postman; Buf Studio.
+- Moat: shared ledger with Attempt 1; offline-first.
+- Innovation: composition + ledger, not new protocol client.
+
+### Decision
+**pursue-candidate.**
+
+---
+## Attempt 24 — Local systems knowledge base (sqlite-vec vault)
+
+### Idea / closed-loop claim
+Ingest docs/code notes → hybrid FTS+vector → query for humans/agents.
+
+### Can the loop stand?
+**Yes**, but RAG products already flood this.
+
+### Parts from atlas
+`asg017/sqlite-vec`, `tursodatabase/libsql`, `manticoresoftware/manticoresearch`, `scrapy/scrapy`, `mozilla/pdf.js`.
+
+### Missing glue
+Embedding provider wiring — products already ship it.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| sqlite-vec | https://github.com/asg017/sqlite-vec | Vector extension part | Part |
+| local-rag-mcp | https://github.com/Gilligan-Tech-Inc/local-rag-mcp | SQLite hybrid RAG MCP | Occupied |
+| OpenClaw / DEEP / Zurvan | PingCAP blog ; GitHub | Local RAG/memory products | Occupied |
+
+### Verdict
+**occupied** (as product); keep as library dependency only.
+
+### If open/thin: fill-soon / moat / innovation
+N/A
+
+### Decision
+**abandon.**
+
+---
+## Attempt 25 — Container image diet / rebuild loop
+
+### Idea / closed-loop claim
+dive/dockle findings → automated rebuild with ko/buildx → re-scan → admit.
+
+### Can the loop stand?
+**Partial.** Tools compose in CI; little differentiation vs Trivy/Copacetic/Kubescape patching.
+
+### Parts from atlas
+`wagoodman/dive`, `goodwithtech/dockle`, `ko-build/ko`, `docker/buildx`, `podman-container-tools/buildah`, `goreleaser/goreleaser`, `quay/clair`.
+
+### Missing glue
+Opinionated rebuild policy engine.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| Kubescape + Copacetic | https://kubescape.io/ | Image vuln+patch platform | Crowded |
+| Dive CLI culture | https://github.com/wagoodman/dive | Image exploration part | Part |
+
+### Verdict
+**thin-overlap** but weak wedge.
+
+### If open/thin: fill-soon / moat / innovation
+- Fill-soon: Kubescape patching deepening.
+- Moat: weak standalone.
+- Innovation: low.
+
+### Decision
+**park.**
+
+---
+## Attempt 26 — Atlas-aware disclosure + release governance gate
+
+### Idea / closed-loop claim
+Closed loop for assisted OSS contrib: trailer enforcement, CI workflow scan, release tooling, atlas proceed/leave policy check, human sign-off.
+
+### Can the loop stand?
+**Yes for maintainer tooling.** Hooks and CI gates work today; atlas policy pack is the differentiator.
+
+### Parts from atlas
+zizmorcore/zizmor, conventional-changelog/commitlint, evilmartians/lefthook, goreleaser/goreleaser, ast-grep/ast-grep, go-task/task, plus atlas proceed/leave data.
+
+### Missing glue
+Single atlasgate CLI; per-policy profiles; PR checklist adapters.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| Commit Check | commit-check.com blog 2026-07-06 | CI forbid/ignore tool signatures | Strong adjacent |
+| assisted-by plugin | github.com/bcmyguest/assisted-by | Kernel trailer enforcement | Adjacent |
+| rai-lint | DEV.to anchildress1 | RAI footer enforcement | Adjacent |
+| chaoss/disclosure | github.com/chaoss/disclosure | Disclosure signal scanner | Adjacent |
+| gestate | pypi.org/project/gestate | min-release-age across package managers | Adjacent |
+
+### Verdict
+**thin-overlap.** Attribution gates emerging; atlas proceed/leave plus disclosure plus zizmor plus release as one policy pack is not shipped as a product.
+
+### If open/thin: fill-soon / moat / innovation
+- Fill-soon: Commit Check require mode; kernel tooling spread.
+- Moat: atlas scored dataset as policy input.
+- Innovation: policy composition across contrib, CI, release.
+
+### Decision
+**pursue-candidate.**
+
+---
+## Attempt 27 — Lightweight personal overlay mesh (Nebula-centric)
+
+### Idea / closed-loop claim
+Nebula/frp + Caddy + mkcert as a poor-man Tailscale product.
+
+### Can the loop stand?
+**Yes**, but Octelium/Pangolin/Wiredoor/OpenZiti occupy assembled ZTNA (Attempt 3).
+
+### Parts from atlas
+`slackhq/nebula`, `fatedier/frp`, `rathole-org/rathole`, `caddyserver/caddy`, `FiloSottile/mkcert`.
+
+### Missing glue
+Installer — vendors occupy.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| Octelium / Pangolin / Wiredoor | octelium.com ; wiredoor.net | Assembled ZTNA products | Occupied (Attempt 3) |
+| Nebula | github.com/slackhq/nebula | Overlay mesh part | Part |
+
+### Verdict
+**occupied.**
+
+### If open/thin: fill-soon / moat / innovation
+N/A
+
+### Decision
+**abandon.**
+
+---
+## Attempt 28 — CLI observability notebook (asciinema + metrics + tasks)
+
+### Idea / closed-loop claim
+Record CLI sessions + scrape metrics + attach to experiment runs as a notebook for systems work.
+
+### Can the loop stand?
+**Partial.** Naturally a module of Attempt 1, not a standalone product.
+
+### Parts from atlas
+`asciinema/asciinema`, `amir20/dozzle`, `wtfutil/wtf`, `prometheus/prometheus`, `go-task/task`, `jesseduffield/lazygit`.
+
+### Missing glue
+Attachment schema into lab ledger.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| Asciinema | asciinema.org | Session recorder part | Part |
+| Dozzle | dozzle.dev | Log viewer part | Part |
+
+### Verdict
+**thin-overlap** as standalone; better as feature of Attempt 1.
+
+### If open/thin: fill-soon / moat / innovation
+- Fold into Attempt 1 UX.
+
+### Decision
+**park** (fold into Attempt 1).
+
+---
+## Attempt 29 — Multi-ecosystem airgap package mirror
+
+### Idea / closed-loop claim
+One operator tool: sync/pin/verify offline mirrors for uv + bun + Nix closures + OCI via oras/rclone.
+
+### Can the loop stand?
+**Partial → yes per ecosystem; polyglot unification is the gap.**
+
+### Parts from atlas
+astral-sh/uv, oven-sh/bun, NixOS/nix, rclone/rclone, oras-project/oras, Homebrew/brew, pkgxdev/pkgx, go-task/task, codenotary/immudb.
+
+### Missing glue
+Unified manifest; cross-ecosystem verify; platform matrix packing.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| uv-pack | github.com/davnn/uv-pack | Offline uv env pack | Python-only |
+| zuv | github.com/HamzaYslmn/zuv | Single-file uv bundles | Python-only |
+| Airgap uv guide | alephnull.sk blog | Manual recipe | Guide |
+| Nix offline discourse | discourse.nixos.org | Closure copy recipes | No polyglot product |
+
+### Verdict
+**thin-overlap → open gap** for polyglot offline mirror; single-ecosystem tools exist; enterprise mirror appliances occupy commercial.
+
+### If open/thin: fill-soon / moat / innovation
+- Fill-soon: Astral offline features; corporate mirror appliances.
+- Moat: OSS small-team polyglot + atlas pins.
+- Innovation: unified sync/verify UX across ecosystems.
+
+### Decision
+**pursue-candidate.**
+
+---
+## Attempt 30 — Research harness over systems lab (non-LLM product claim)
+
+### Idea / closed-loop claim
+Scripts or agents drive Attempt-1 lab runs with harvest and verify — product remains the lab, not an AutoGPT competitor.
+
+### Can the loop stand?
+**Partial.** Useful architecture; product identity collapses into Attempt 1 + Attempt 6 module.
+
+### Parts from atlas
+Attempt 1 spine + scrapy/scrapy + Orange-OpenSource/hurl + ast-grep/ast-grep + sandbox parts.
+
+### Missing glue
+Stable lab API / MCP surface.
+
+### Prior art found (external + GitHub)
+| Name | URL | What they do | Quality |
+|---|---|---|---|
+| OpenHands / OpenResearch / GPT Researcher | openhands.dev ; openresearch.sh ; gptr.dev | Occupy agent claim space | Different buyer if claimed as agent product |
+
+### Verdict
+**thin-overlap** as naming; park as API surface of Attempt 1.
+
+### If open/thin: fill-soon / moat / innovation
+- Keep as API, not product name.
+
+### Decision
+**park.**
+
+---
+
+## Attempt scoreboard (full)
 
 | # | Candidate | Loop stands? | Verdict | Decision |
 |---|---|---|---|---|
-| 1 | Local-first systems engineering lab | yes (narrow) | thin-overlap → open gap | **pursue** |
+| 1 | Local-first systems engineering lab | yes (narrow) | thin-overlap → open gap | **pursue-candidate** |
 | 2 | Supply-chain verify loop | yes | occupied | abandon |
 | 3 | Zero-trust personal edge | yes | occupied | abandon |
 | 4 | Secure remote DevEx | yes | occupied | abandon |
-| 5 | Observability+backup | yes | occupied | abandon |
+| 5 | Observability+backup (compose pack) | yes | occupied | abandon |
 | 6 | Agent-safe OSS contrib sandbox | partial/yes | thin-overlap | park |
 | 7 | WASM hermetic capsule | partial | occupied | abandon |
 | 8 | GitOps platform-in-a-box | yes | occupied | abandon |
+| 9 | Data/ML-ops-lite dataset ledger | yes (narrow) | thin-overlap | **pursue-candidate** |
+| 10 | Personal DNS privacy plane | yes | occupied | abandon |
+| 11 | Continuous backup restore-verify | yes | occupied | abandon |
+| 12 | WASM plugin host+registry | yes | occupied | abandon |
+| 13 | Media/docs vault (non-LLM) | partial/yes | thin-overlap | **pursue-candidate** |
+| 14 | Continuous security posture ops | yes | occupied | abandon |
+| 15 | Identity+secrets spine | yes | occupied | abandon |
+| 16 | Web harvest→archive | yes | occupied | abandon |
+| 17 | Python monorepo DevEx OS | partial | occupied | abandon |
+| 18 | Traffic capture→replay→regress | yes | occupied | abandon |
+| 19 | Self-hosted edge workers platform | partial/yes | thin-overlap | **pursue-candidate** |
+| 20 | Immutable ops evidence ledger | yes | thin-overlap | **pursue-candidate** |
+| 21 | Polyglot toolchain capsule | yes | occupied | abandon |
+| 22 | Homelab GitOps lite | yes | occupied | abandon |
+| 23 | Multi-protocol API contract harness | yes (narrow) | thin-overlap → open | **pursue-candidate** |
+| 24 | Local sqlite-vec knowledge base | yes | occupied | abandon |
+| 25 | Container image diet/rebuild | partial | thin-overlap | park |
+| 26 | Atlas AI disclosure+release gate | yes | thin-overlap | **pursue-candidate** |
+| 27 | Lightweight Nebula mesh | yes | occupied | abandon |
+| 28 | CLI observability notebook | partial | thin-overlap | park |
+| 29 | Multi-ecosystem airgap package mirror | partial/yes | thin-overlap → open | **pursue-candidate** |
+| 30 | Research harness over lab | partial | thin-overlap | park |
 
-Only Attempt 1 clears **loop stands AND real gap** under a narrowed non-LLM, non-CDE, non-ZTNA claim.
+**Survivors (pursue-candidate):** 1, 9, 13, 19, 20, 23, 26, 29 — ranked in `PRIORITY.md`. Parked modules (6, 25, 28, 30) may attach to survivors.

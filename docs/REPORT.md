@@ -2,7 +2,7 @@
 
 **Atlas:** vulragrag-star OSS terrain (`/workspace/oss-atlas`)  
 **Date:** 2026-09-09 (Asia/Shanghai)  
-**Outputs:** `REPORT.md` · `PARTS.json` · `ATTEMPTS.md`  
+**Outputs:** `REPORT.md` · `PARTS.json` · `ATTEMPTS.md` · `CANDIDATE_BACKLOG.md` · `PRIORITY.md`  
 **Constraint:** research only — no GitHub PRs/forks; stars/policies only from `scored.jsonl`.
 
 ---
@@ -169,5 +169,27 @@ go-task/task + dagger/dagger
 
 - [x] `REPORT.md` — method, graph, ranked scenarios, deep dives, one recommendation  
 - [x] `PARTS.json` — capability→repos with atlas names/stars/policies  
-- [x] `ATTEMPTS.md` — 8 attempts, external prior art, pursue/park/abandon  
+- [x] `ATTEMPTS.md` — 30 attempts, external prior art, pursue/park/abandon  
+- [x] `CANDIDATE_BACKLOG.md` — full catalog table  
+- [x] `PRIORITY.md` — multi-survivor P0/P1/P2 ranking  
 - [x] No PRs/forks; no fabricated stars  
+
+
+---
+
+## Addendum — 2026-09-09 methodology correction
+
+**Correction:** Prior research was too narrow (8 attempts, prematurely one pursue).  
+
+**New method:** **enumerate-all → filter → prioritize**
+
+1. Exhaustively enumerate closed-loop product scenarios assemblable from atlas proceed parts across domains (research/agents, supply chain, edge/ZT, DevEx, data/ML-ops-lite, networking/DNS, security ops, backup/DR, package ecosystems, WASM, contrib governance, media/docs, homelab, observability, identity, …) — target **20–30** distinct loops.
+2. For each candidate: standability, concrete atlas `full_name` parts, missing glue, prior art **beyond GitHub** (product sites, HN, blogs, arXiv, company pages) + GitHub, verdict, fill-soon/moat/innovation, decision (`pursue-candidate` | `park` | `abandon`). Allow **multiple** pursue-candidates.
+3. Publish full catalog: [`CANDIDATE_BACKLOG.md`](CANDIDATE_BACKLOG.md).
+4. Rank survivors: [`PRIORITY.md`](PRIORITY.md) with standability, gap clarity, part readiness, fill-soon⁻¹, buildability — **P0/P1/P2**, not a single forced pursue.
+
+**Resulting inventory:** 30 attempts in [`ATTEMPTS.md`](ATTEMPTS.md).  
+**pursue-candidate survivors (8):** #1, #9, #13, #19, #20, #23, #26, #29 — see PRIORITY for order.  
+**Supersedes** §5 “ONE scaffold / only Attempt 1” framing: Attempt 1 remains **P0** but is no longer the sole survivor.
+
+**Outputs updated this addendum:** `ATTEMPTS.md`, `CANDIDATE_BACKLOG.md`, `PRIORITY.md`, `README.md`.
