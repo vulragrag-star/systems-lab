@@ -1,0 +1,97 @@
+[
+  {
+    "full_name": "yt-dlp/yt-dlp",
+    "policy": "hard_ban",
+    "sector": "cli-systems"
+  },
+  {
+    "full_name": "sveltejs/svelte",
+    "policy": "agentscan",
+    "sector": "compilers-runtimes"
+  },
+  {
+    "full_name": "withastro/astro",
+    "policy": "agentscan",
+    "sector": "editors-devex"
+  },
+  {
+    "full_name": "nuxt/nuxt",
+    "policy": "agentscan",
+    "sector": "editors-devex"
+  },
+  {
+    "full_name": "typst/typst",
+    "policy": "hard_ban",
+    "sector": "compilers-runtimes"
+  },
+  {
+    "full_name": "fish-shell/fish-shell",
+    "policy": "hard_ban",
+    "sector": "editors-devex"
+  },
+  {
+    "full_name": "aio-libs/aiohttp",
+    "policy": "agentscan",
+    "sector": "python-tooling"
+  },
+  {
+    "full_name": "PyO3/pyo3",
+    "policy": "hard_ban",
+    "sector": "python-tooling"
+  },
+  {
+    "full_name": "sqlite/sqlite",
+    "policy": "hard_ban",
+    "sector": "databases-storage"
+  },
+  {
+    "full_name": "openbao/openbao",
+    "policy": "hard_ban",
+    "sector": "security-crypto"
+  },
+  {
+    "full_name": "voidzero-dev/vite-plus",
+    "policy": "agentscan",
+    "sector": "compilers-runtimes"
+  },
+  {
+    "full_name": "kanidm/kanidm",
+    "policy": "hard_ban",
+    "sector": "security-crypto"
+  },
+  {
+    "full_name": "qemu/qemu",
+    "policy": "hard_ban",
+    "sector": "networking-distributed"
+  },
+  {
+    "full_name": "GNOME/gimp",
+    "policy": "hard_ban",
+    "sector": "networking-distributed"
+  },
+  {
+    "full_name": "alacritty/alacritty",
+    "policy": "hard_ban",
+    "sector": "cli-systems"
+  },
+  {
+    "full_name": "ghostty-org/ghostty",
+    "policy": "hard_ban",
+    "sector": "cli-systems"
+  },
+  {
+    "full_name": "libsdl-org/SDL",
+    "policy": "hard_ban",
+    "sector": "cli-systems"
+  },
+  {
+    "full_name": "PowerDNS/pdns",
+    "policy": "hard_ban",
+    "sector": "networking-distributed"
+  },
+  {
+    "full_name": "ipxe/ipxe",
+    "policy": "hard_ban",
+    "sector": "networking-distributed"
+  }
+]

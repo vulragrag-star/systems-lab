@@ -1,0 +1,13 @@
+# Minimal systems-lab experiment (declarative)
+apiVersion: systems-lab.io/v1alpha1
+kind: Experiment
+metadata:
+  name: hello-echo
+spec:
+  runtime: wasmtime   # or: kind | gvisor
+  command: ["echo", "systems-lab hello"]
+  capture:
+    stdout: true
+    exitCode: true
+  ledger:
+    store: libsql

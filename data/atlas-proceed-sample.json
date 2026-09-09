@@ -1,0 +1,1202 @@
+[
+  {
+    "full_name": "neovim/neovim",
+    "stars": 102213,
+    "sector": "editors-devex",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "oven-sh/bun",
+    "stars": 95915,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "zed-industries/zed",
+    "stars": 89921,
+    "sector": "editors-devex",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "astral-sh/uv",
+    "stars": 89622,
+    "sector": "python-tooling",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "coder/code-server",
+    "stars": 79236,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "apache/superset",
+    "stars": 74677,
+    "sector": "databases-storage",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "pallets/flask",
+    "stars": 73584,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "prometheus/prometheus",
+    "stars": 66005,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "scrapy/scrapy",
+    "stars": 64240,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "FuelLabs/sway",
+    "stars": 61454,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "mozilla/pdf.js",
+    "stars": 53846,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "prettier/prettier",
+    "stars": 52240,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "astral-sh/ruff",
+    "stars": 49545,
+    "sector": "python-tooling",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "pyenv/pyenv",
+    "stars": 45085,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "psf/black",
+    "stars": 41834,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "python-poetry/poetry",
+    "stars": 34295,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "cookiecutter/cookiecutter",
+    "stars": 25081,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "fastapi/typer",
+    "stars": 19960,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "bytecodealliance/wasmtime",
+    "stars": 18607,
+    "sector": "compilers-runtimes",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "tinygo-org/tinygo",
+    "stars": 17707,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "pallets/click",
+    "stars": 17656,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "tursodatabase/libsql",
+    "stars": 17208,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "tikv/tikv",
+    "stars": 16836,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "rust-lang/rust-analyzer",
+    "stars": 16825,
+    "sector": "compilers-runtimes",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "apple/foundationdb",
+    "stars": 16677,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "dgraph-io/badger",
+    "stars": 15758,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "microsoft/pyright",
+    "stars": 15625,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "go-sql-driver/mysql",
+    "stars": 15282,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "Nuitka/Nuitka",
+    "stars": 15122,
+    "sector": "python-tooling",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "zitadel/zitadel",
+    "stars": 14959,
+    "sector": "security-crypto",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "pytest-dev/pytest",
+    "stars": 14489,
+    "sector": "python-tooling",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "git-lfs/git-lfs",
+    "stars": 14476,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "coder/coder",
+    "stars": 14399,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "benbjohnson/litestream",
+    "stars": 14358,
+    "sector": "databases-storage",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "cert-manager/cert-manager",
+    "stars": 14069,
+    "sector": "security-crypto",
+    "policy": "silent"
+  },
+  {
+    "full_name": "openresty/openresty",
+    "stars": 14028,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "rook/rook",
+    "stars": 13645,
+    "sector": "databases-storage",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "jonas/tig",
+    "stars": 13327,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "gopherjs/gopherjs",
+    "stars": 13183,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "pyinstaller/pyinstaller",
+    "stars": 13088,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "pypa/pipx",
+    "stars": 12955,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "drakkan/sftpgo",
+    "stars": 12498,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "manticoresoftware/manticoresearch",
+    "stars": 11993,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "kubescape/kubescape",
+    "stars": 11722,
+    "sector": "security-crypto",
+    "policy": "silent"
+  },
+  {
+    "full_name": "linkerd/linkerd2",
+    "stars": 11487,
+    "sector": "security-crypto",
+    "policy": "silent"
+  },
+  {
+    "full_name": "dexidp/dex",
+    "stars": 11083,
+    "sector": "security-crypto",
+    "policy": "silent"
+  },
+  {
+    "full_name": "quay/clair",
+    "stars": 11057,
+    "sector": "security-crypto",
+    "policy": "silent"
+  },
+  {
+    "full_name": "mawww/kakoune",
+    "stars": 11049,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "PRQL/prql",
+    "stars": 10910,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "foundry-rs/foundry",
+    "stars": 10583,
+    "sector": "compilers-runtimes",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "a-h/templ",
+    "stars": 10532,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "AGWA/git-crypt",
+    "stars": 9895,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "etcd-io/bbolt",
+    "stars": 9727,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "apache/datafusion",
+    "stars": 9292,
+    "sector": "databases-storage",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "mattn/go-sqlite3",
+    "stars": 9236,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "golang-jwt/jwt",
+    "stars": 9217,
+    "sector": "security-crypto",
+    "policy": "silent"
+  },
+  {
+    "full_name": "wasm-bindgen/wasm-bindgen",
+    "stars": 9145,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "dinedal/textql",
+    "stars": 9103,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "codenotary/immudb",
+    "stars": 9029,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "HypothesisWorks/hypothesis",
+    "stars": 8946,
+    "sector": "python-tooling",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "smallstep/certificates",
+    "stars": 8843,
+    "sector": "security-crypto",
+    "policy": "silent"
+  },
+  {
+    "full_name": "awslabs/llrt",
+    "stars": 8801,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "evilmartians/lefthook",
+    "stars": 8786,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "XiaoMi/soar",
+    "stars": 8755,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "cloudflare/workerd",
+    "stars": 8696,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "pdm-project/pdm",
+    "stars": 8674,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "avast/retdec",
+    "stars": 8623,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "mongodb/mongo-go-driver",
+    "stars": 8540,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "robertkrimen/otto",
+    "stars": 8449,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "traefik/yaegi",
+    "stars": 8391,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "j178/prek",
+    "stars": 8382,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "PyCQA/bandit",
+    "stars": 8251,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "pydantic/monty",
+    "stars": 8184,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "aquasecurity/kube-bench",
+    "stars": 8176,
+    "sector": "security-crypto",
+    "policy": "silent"
+  },
+  {
+    "full_name": "kyverno/kyverno",
+    "stars": 8120,
+    "sector": "security-crypto",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "mamba-org/mamba",
+    "stars": 8089,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "asg017/sqlite-vec",
+    "stars": 8087,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "sphinx-doc/sphinx",
+    "stars": 8004,
+    "sector": "python-tooling",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "expr-lang/expr",
+    "stars": 8003,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "Masterminds/squirrel",
+    "stars": 7987,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "bensadeh/tailspin",
+    "stars": 7959,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "parcel-bundler/lightningcss",
+    "stars": 7674,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "rustls/rustls",
+    "stars": 7605,
+    "sector": "security-crypto",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "youki-dev/youki",
+    "stars": 7593,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "boa-dev/boa",
+    "stars": 7538,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "conda/conda",
+    "stars": 7505,
+    "sector": "python-tooling",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "jerryscript-project/jerryscript",
+    "stars": 7417,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "gopasspw/gopass",
+    "stars": 7130,
+    "sector": "security-crypto",
+    "policy": "silent"
+  },
+  {
+    "full_name": "authzed/spicedb",
+    "stars": 7030,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "yuin/gopher-lua",
+    "stars": 6979,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "rust-lang/rustfmt",
+    "stars": 6961,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "PyCQA/isort",
+    "stars": 6951,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "Mbed-TLS/mbedtls",
+    "stars": 6949,
+    "sector": "security-crypto",
+    "policy": "silent"
+  },
+  {
+    "full_name": "facebook/pyrefly",
+    "stars": 6946,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "dominikh/go-tools",
+    "stars": 6890,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "halide/Halide",
+    "stars": 6598,
+    "sector": "compilers-runtimes",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "zizmorcore/zizmor",
+    "stars": 6458,
+    "sector": "security-crypto",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "facebook/redex",
+    "stars": 6300,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "wasm-micro-runtime/wasm-micro-runtime",
+    "stars": 6085,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "FalkorDB/FalkorDB",
+    "stars": 5946,
+    "sector": "databases-storage",
+    "policy": "silent"
+  },
+  {
+    "full_name": "PyO3/maturin",
+    "stars": 5785,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "extism/extism",
+    "stars": 5756,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "pylint-dev/pylint",
+    "stars": 5722,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "tummychow/git-absorb",
+    "stars": 5715,
+    "sector": "editors-devex",
+    "policy": "silent"
+  },
+  {
+    "full_name": "rhaiscript/rhai",
+    "stars": 5661,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "apache/opendal",
+    "stars": 5371,
+    "sector": "databases-storage",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "amber-lang/amber",
+    "stars": 5220,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "monoio-rs/monoio",
+    "stars": 5106,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "smol-rs/smol",
+    "stars": 5060,
+    "sector": "compilers-runtimes",
+    "policy": "silent"
+  },
+  {
+    "full_name": "pypa/virtualenv",
+    "stars": 5045,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "tox-dev/tox",
+    "stars": 3931,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "pantsbuild/pants",
+    "stars": 3826,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "PyCQA/flake8",
+    "stars": 3822,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "copier-org/copier",
+    "stars": 3560,
+    "sector": "python-tooling",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "coveragepy/coveragepy",
+    "stars": 3411,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "beeware/briefcase",
+    "stars": 3347,
+    "sector": "python-tooling",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "pypa/flit",
+    "stars": 2252,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "pypa/twine",
+    "stars": 1788,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "wntrblm/nox",
+    "stars": 1554,
+    "sector": "python-tooling",
+    "policy": "silent"
+  },
+  {
+    "full_name": "caddyserver/caddy",
+    "stars": 75563,
+    "sector": "networking-distributed",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "probelabs/goreplay",
+    "stars": 19319,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "slackhq/nebula",
+    "stars": 18310,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "jpillora/chisel",
+    "stars": 16506,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "hyperium/hyper",
+    "stars": 16313,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "oauth2-proxy/oauth2-proxy",
+    "stars": 14929,
+    "sector": "networking-distributed",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "coturn/coturn",
+    "stars": 14391,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "coredns/coredns",
+    "stars": 14299,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "rathole-org/rathole",
+    "stars": 14123,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "DNSCrypt/dnscrypt-proxy",
+    "stars": 13647,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "fullstorydev/grpcurl",
+    "stars": 12803,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "cloudflare/quiche",
+    "stars": 11814,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "pymumu/smartdns",
+    "stars": 11299,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "panjf2000/gnet",
+    "stars": 11245,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "shadowsocks/shadowsocks-rust",
+    "stars": 10848,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "rofl0r/proxychains-ng",
+    "stars": 10680,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "flannel-io/flannel",
+    "stars": 9532,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "kubernetes-sigs/external-dns",
+    "stars": 9083,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "miekg/dns",
+    "stars": 8769,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "esnet/iperf",
+    "stars": 8742,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "metallb/metallb",
+    "stars": 8343,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "yarrick/iodine",
+    "stars": 7962,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "zeek/zeek",
+    "stars": 7945,
+    "sector": "networking-distributed",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "twitchtv/twirp",
+    "stars": 7528,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "libcpr/cpr",
+    "stars": 7425,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "davecheney/httpstat",
+    "stars": 7188,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "tokio-rs/mio",
+    "stars": 7093,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "erebe/wstunnel",
+    "stars": 7030,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "zmap/zmap",
+    "stars": 6371,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "JoeDog/siege",
+    "stars": 6217,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "emmett-framework/granian",
+    "stars": 5618,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "libp2p/rust-libp2p",
+    "stars": 5612,
+    "sector": "networking-distributed",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "tonarino/innernet",
+    "stars": 5544,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "3proxy/3proxy",
+    "stars": 5453,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "yrutschle/sslh",
+    "stars": 5111,
+    "sector": "networking-distributed",
+    "policy": "silent"
+  },
+  {
+    "full_name": "ninja-build/ninja",
+    "stars": 13206,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "goreleaser/goreleaser",
+    "stars": 16023,
+    "sector": "devops-build",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "ko-build/ko",
+    "stars": 8516,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "kubernetes-sigs/kind",
+    "stars": 15478,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "ahmetb/kubectx",
+    "stars": 19978,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "jesseduffield/lazydocker",
+    "stars": 52756,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "earthly/earthly",
+    "stars": 12045,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "jetify-com/devbox",
+    "stars": 12342,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "woodpecker-ci/woodpecker",
+    "stars": 7831,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "Jguer/yay",
+    "stars": 13742,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "Morganamilo/paru",
+    "stars": 8974,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "alexellis/k3sup",
+    "stars": 7425,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "podman-container-tools/buildah",
+    "stars": 9009,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "GoogleContainerTools/skaffold",
+    "stars": 15888,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "bitnami/sealed-secrets",
+    "stars": 9276,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "fluxcd/flux2",
+    "stars": 8384,
+    "sector": "devops-build",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "replicate/cog",
+    "stars": 9470,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "pkgxdev/pkgx",
+    "stars": 9916,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "loft-sh/vcluster",
+    "stars": 11295,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "velero-io/velero",
+    "stars": 10284,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "kubernetes-sigs/kubebuilder",
+    "stars": 9307,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "amir20/dozzle",
+    "stars": 14300,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "dockur/windows",
+    "stars": 53197,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "gruntwork-io/terratest",
+    "stars": 7943,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "uber/kraken",
+    "stars": 6743,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "dagger/dagger",
+    "stars": 16230,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "argoproj/argo-workflows",
+    "stars": 16959,
+    "sector": "devops-build",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "tektoncd/pipeline",
+    "stars": 9061,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "kubernetes/kops",
+    "stars": 16670,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "stakater/Reloader",
+    "stars": 10392,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "fission/fission",
+    "stars": 8914,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "prometheus-operator/prometheus-operator",
+    "stars": 9976,
+    "sector": "devops-build",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "krallin/tini",
+    "stars": 11224,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "google/gvisor",
+    "stars": 19245,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "rust-lang/cargo",
+    "stars": 15460,
+    "sector": "devops-build",
+    "policy": "silent"
+  },
+  {
+    "full_name": "junegunn/fzf",
+    "stars": 82865,
+    "sector": "cli-systems",
+    "policy": "silent"
+  },
+  {
+    "full_name": "BurntSushi/ripgrep",
+    "stars": 68078,
+    "sector": "cli-systems",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "jesseduffield/lazygit",
+    "stars": 82122,
+    "sector": "cli-systems",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "sharkdp/bat",
+    "stars": 60389,
+    "sector": "cli-systems",
+    "policy": "silent"
+  },
+  {
+    "full_name": "starship/starship",
+    "stars": 59811,
+    "sector": "cli-systems",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "rclone/rclone",
+    "stars": 59639,
+    "sector": "cli-systems",
+    "policy": "disclosure"
+  },
+  {
+    "full_name": "Genymobile/scrcpy",
+    "stars": 149109,
+    "sector": "cli-systems",
+    "policy": "silent"
+  },
+  {
+    "full_name": "fatedier/frp",
+    "stars": 109273,
+    "sector": "cli-systems",
+    "policy": "silent"
+  },
+  {
+    "full_name": "microsoft/terminal",
+    "stars": 104843,
+    "sector": "cli-systems",
+    "policy": "silent"
+  },
+  {
+    "full_name": "microsoft/PowerToys",
+    "stars": 138490,
+    "sector": "cli-systems",
+    "policy": "silent"
+  },
+  {
+    "full_name": "ohmyzsh/ohmyzsh",
+    "stars": 189625,
+    "sector": "cli-systems",
+    "policy": "disclosure"
+  }
+]

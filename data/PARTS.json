@@ -1,0 +1,1497 @@
+{
+  "source": "vulragrag-star oss-atlas scored.jsonl proceed=true",
+  "scored_at_note": "stars and policies from /workspace/oss-atlas/data/scored.jsonl; do not invent stars",
+  "proceed_total": 786,
+  "capability_buckets": {
+    "sandbox": {
+      "label": "sandbox",
+      "description": "Isolation/runtime: containers, microVMs, WASM, local k8s",
+      "count": 17,
+      "repos": [
+        {
+          "full_name": "dockur/windows",
+          "stars": 53197,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "google/gvisor",
+          "stars": 19245,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "bytecodealliance/wasmtime",
+          "stars": 18607,
+          "sector": "compilers-runtimes",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "dagger/dagger",
+          "stars": 16230,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "kubernetes-sigs/kind",
+          "stars": 15478,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "jetify-com/devbox",
+          "stars": 12342,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "earthly/earthly",
+          "stars": 12045,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "loft-sh/vcluster",
+          "stars": 11295,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "krallin/tini",
+          "stars": 11224,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "replicate/cog",
+          "stars": 9470,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "podman-container-tools/buildah",
+          "stars": 9009,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "youki-dev/youki",
+          "stars": 7593,
+          "sector": "compilers-runtimes",
+          "policy": "silent"
+        },
+        {
+          "full_name": "testcontainers/testcontainers-go",
+          "stars": 4971,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "canonical/lxd",
+          "stars": 4825,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "containers/crun",
+          "stars": 4109,
+          "sector": "compilers-runtimes",
+          "policy": "silent"
+        },
+        {
+          "full_name": "railwayapp/nixpacks",
+          "stars": 3555,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "wasmerio/wasmer-go",
+          "stars": 2949,
+          "sector": "compilers-runtimes",
+          "policy": "silent"
+        }
+      ]
+    },
+    "workflow": {
+      "label": "workflow",
+      "description": "Pipelines, task runners, GitOps, CI engines",
+      "count": 18,
+      "repos": [
+        {
+          "full_name": "argoproj/argo-workflows",
+          "stars": 16959,
+          "sector": "devops-build",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "dagger/dagger",
+          "stars": 16230,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "go-task/task",
+          "stars": 16110,
+          "sector": "cli-systems",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "GoogleContainerTools/skaffold",
+          "stars": 15888,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "earthly/earthly",
+          "stars": 12045,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "stakater/Reloader",
+          "stars": 10392,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "prometheus-operator/prometheus-operator",
+          "stars": 9976,
+          "sector": "devops-build",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "tektoncd/pipeline",
+          "stars": 9061,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "fluxcd/flux2",
+          "stars": 8384,
+          "sector": "devops-build",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "woodpecker-ci/woodpecker",
+          "stars": 7831,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "werf/werf",
+          "stars": 4719,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "jenkins-x/jx",
+          "stars": 4690,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "magefile/mage",
+          "stars": 4689,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "moonrepo/moon",
+          "stars": 4095,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "roboll/helmfile",
+          "stars": 4033,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "hasura/gitkube",
+          "stars": 3846,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "akuity/kargo",
+          "stars": 3637,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "okteto/okteto",
+          "stars": 3541,
+          "sector": "devops-build",
+          "policy": "silent"
+        }
+      ]
+    },
+    "storage": {
+      "label": "storage",
+      "description": "Object/sync, embedded DB, backup, metrics TSDB",
+      "count": 18,
+      "repos": [
+        {
+          "full_name": "prometheus/prometheus",
+          "stars": 66005,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "rclone/rclone",
+          "stars": 59639,
+          "sector": "cli-systems",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "tursodatabase/libsql",
+          "stars": 17208,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "tikv/tikv",
+          "stars": 16836,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "apple/foundationdb",
+          "stars": 16677,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "dgraph-io/badger",
+          "stars": 15758,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "benbjohnson/litestream",
+          "stars": 14358,
+          "sector": "databases-storage",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "rook/rook",
+          "stars": 13645,
+          "sector": "databases-storage",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "drakkan/sftpgo",
+          "stars": 12498,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "manticoresoftware/manticoresearch",
+          "stars": 11993,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "velero-io/velero",
+          "stars": 10284,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "prometheus-operator/prometheus-operator",
+          "stars": 9976,
+          "sector": "devops-build",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "codenotary/immudb",
+          "stars": 9029,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "oliver006/redis_exporter",
+          "stars": 3687,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "prometheus-community/postgres_exporter",
+          "stars": 3609,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "duckdb/pg_duckdb",
+          "stars": 3222,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "duckdb/duckdb-wasm",
+          "stars": 2118,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "ContentSquare/chproxy",
+          "stars": 1481,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        }
+      ]
+    },
+    "identity_tls": {
+      "label": "identity_tls",
+      "description": "PKI/TLS, OIDC/IAM, sealed secrets, SPIFFE",
+      "count": 17,
+      "repos": [
+        {
+          "full_name": "FiloSottile/mkcert",
+          "stars": 59563,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "zitadel/zitadel",
+          "stars": 14959,
+          "sector": "security-crypto",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "oauth2-proxy/oauth2-proxy",
+          "stars": 14929,
+          "sector": "networking-distributed",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "cert-manager/cert-manager",
+          "stars": 14069,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "linkerd/linkerd2",
+          "stars": 11487,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "dexidp/dex",
+          "stars": 11083,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "bitnami/sealed-secrets",
+          "stars": 9276,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "golang-jwt/jwt",
+          "stars": 9217,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "smallstep/certificates",
+          "stars": 8843,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "rustls/rustls",
+          "stars": 7605,
+          "sector": "security-crypto",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "gopasspw/gopass",
+          "stars": 7130,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "Mbed-TLS/mbedtls",
+          "stars": 6949,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "pomerium/pomerium",
+          "stars": 4997,
+          "sector": "networking-distributed",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "lunatic-solutions/lunatic",
+          "stars": 4886,
+          "sector": "compilers-runtimes",
+          "policy": "silent"
+        },
+        {
+          "full_name": "smallstep/cli",
+          "stars": 4326,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "spiffe/spire",
+          "stars": 2522,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "zitadel/oidc",
+          "stars": 1887,
+          "sector": "security-crypto",
+          "policy": "silent"
+        }
+      ]
+    },
+    "tunnel_edge": {
+      "label": "tunnel_edge",
+      "description": "Reverse tunnels, zero-trust fabric, DNS edge",
+      "count": 21,
+      "repos": [
+        {
+          "full_name": "fatedier/frp",
+          "stars": 109273,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "pi-hole/pi-hole",
+          "stars": 60796,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "ginuerzh/gost",
+          "stars": 18214,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "jpillora/chisel",
+          "stars": 16506,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "cloudflare/cloudflared",
+          "stars": 15543,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "coredns/coredns",
+          "stars": 14299,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "rathole-org/rathole",
+          "stars": 14123,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "openresty/openresty",
+          "stars": 14028,
+          "sector": "compilers-runtimes",
+          "policy": "silent"
+        },
+        {
+          "full_name": "pomerium/pomerium",
+          "stars": 4997,
+          "sector": "networking-distributed",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "NLnetLabs/unbound",
+          "stars": 4859,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "microsoft/msquic",
+          "stars": 4775,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "antoniomika/sish",
+          "stars": 4712,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "acassen/keepalived",
+          "stars": 4680,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "openziti/zrok",
+          "stars": 4668,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "novnc/websockify",
+          "stars": 4446,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "openziti/ziti",
+          "stars": 4381,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "DefGuard/defguard",
+          "stars": 2821,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "openresty/luajit2",
+          "stars": 1445,
+          "sector": "compilers-runtimes",
+          "policy": "silent"
+        },
+        {
+          "full_name": "rosenpass/rosenpass",
+          "stars": 1411,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "mullvad/gotatun",
+          "stars": 1366,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "aramperes/onetun",
+          "stars": 1041,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        }
+      ]
+    },
+    "package_release": {
+      "label": "package_release",
+      "description": "Package managers, bundlers, releasers, linkers",
+      "count": 47,
+      "repos": [
+        {
+          "full_name": "oven-sh/bun",
+          "stars": 95915,
+          "sector": "compilers-runtimes",
+          "policy": "silent"
+        },
+        {
+          "full_name": "nvm-sh/nvm",
+          "stars": 95020,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "astral-sh/uv",
+          "stars": 89622,
+          "sector": "python-tooling",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "pallets/flask",
+          "stars": 73584,
+          "sector": "python-tooling",
+          "policy": "silent"
+        },
+        {
+          "full_name": "prettier/prettier",
+          "stars": 52240,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "astral-sh/ruff",
+          "stars": 49545,
+          "sector": "python-tooling",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "Homebrew/brew",
+          "stars": 49467,
+          "sector": "cli-systems",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "pyenv/pyenv",
+          "stars": 45085,
+          "sector": "python-tooling",
+          "policy": "silent"
+        },
+        {
+          "full_name": "parcel-bundler/parcel",
+          "stars": 44024,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "psf/black",
+          "stars": 41834,
+          "sector": "python-tooling",
+          "policy": "silent"
+        },
+        {
+          "full_name": "lerna/lerna",
+          "stars": 36055,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "typicode/husky",
+          "stars": 35309,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "python-poetry/poetry",
+          "stars": 34295,
+          "sector": "python-tooling",
+          "policy": "silent"
+        },
+        {
+          "full_name": "eslint/eslint",
+          "stars": 27499,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "rollup/rollup",
+          "stars": 26309,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "cookiecutter/cookiecutter",
+          "stars": 25081,
+          "sector": "python-tooling",
+          "policy": "silent"
+        },
+        {
+          "full_name": "fastapi/typer",
+          "stars": 19960,
+          "sector": "python-tooling",
+          "policy": "silent"
+        },
+        {
+          "full_name": "conventional-changelog/commitlint",
+          "stars": 18735,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "upx/upx",
+          "stars": 17857,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "pallets/click",
+          "stars": 17656,
+          "sector": "python-tooling",
+          "policy": "silent"
+        },
+        {
+          "full_name": "NixOS/nix",
+          "stars": 17655,
+          "sector": "cli-systems",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "rui314/mold",
+          "stars": 16954,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "goreleaser/goreleaser",
+          "stars": 16023,
+          "sector": "devops-build",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "rust-lang/cargo",
+          "stars": 15460,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "Nuitka/Nuitka",
+          "stars": 15122,
+          "sector": "python-tooling",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "git-lfs/git-lfs",
+          "stars": 14476,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "rolldown/rolldown",
+          "stars": 13943,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "Jguer/yay",
+          "stars": 13742,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "ninja-build/ninja",
+          "stars": 13206,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "volta-cli/volta",
+          "stars": 13054,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "jetify-com/devbox",
+          "stars": 12342,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "pkgxdev/pkgx",
+          "stars": 9916,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "podman-container-tools/buildah",
+          "stars": 9009,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "Morganamilo/paru",
+          "stars": 8974,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "ko-build/ko",
+          "stars": 8516,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "yarnpkg/berry",
+          "stars": 8103,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "parcel-bundler/lightningcss",
+          "stars": 7674,
+          "sector": "compilers-runtimes",
+          "policy": "silent"
+        },
+        {
+          "full_name": "tfutils/tfenv",
+          "stars": 4967,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "audreyfeldroy/cookiecutter-pypackage",
+          "stars": 4600,
+          "sector": "python-tooling",
+          "policy": "silent"
+        },
+        {
+          "full_name": "docker/buildx",
+          "stars": 4496,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "NixOS/patchelf",
+          "stars": 4258,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "moonrepo/moon",
+          "stars": 4095,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "version-fox/vfox",
+          "stars": 3979,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "DeterminateSystems/nix-installer",
+          "stars": 3683,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "railwayapp/nixpacks",
+          "stars": 3555,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "goreleaser/nfpm",
+          "stars": 2631,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "crev-dev/cargo-crev",
+          "stars": 2332,
+          "sector": "security-crypto",
+          "policy": "silent"
+        }
+      ]
+    },
+    "policy_scan": {
+      "label": "policy_scan",
+      "description": "Admission/policy, image/CIS/SAST, binary inspect",
+      "count": 14,
+      "repos": [
+        {
+          "full_name": "wagoodman/dive",
+          "stars": 54538,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "ffuf/ffuf",
+          "stars": 16652,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "ast-grep/ast-grep",
+          "stars": 15797,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "kubescape/kubescape",
+          "stars": 11722,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "quay/clair",
+          "stars": 11057,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "aquasecurity/kube-bench",
+          "stars": 8176,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "kyverno/kyverno",
+          "stars": 8120,
+          "sector": "security-crypto",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "zizmorcore/zizmor",
+          "stars": 6458,
+          "sector": "security-crypto",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "aquasecurity/tracee",
+          "stars": 4612,
+          "sector": "security-crypto",
+          "policy": "silent"
+        },
+        {
+          "full_name": "orhun/binsider",
+          "stars": 4418,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "FairwindsOps/polaris",
+          "stars": 3385,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "goodwithtech/dockle",
+          "stars": 3295,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "FairwindsOps/pluto",
+          "stars": 2578,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "aquasecurity/trivy-operator",
+          "stars": 1935,
+          "sector": "security-crypto",
+          "policy": "silent"
+        }
+      ]
+    },
+    "query_analytics": {
+      "label": "query_analytics",
+      "description": "SQL/PromQL/PRQL/BI and structured query CLIs",
+      "count": 11,
+      "repos": [
+        {
+          "full_name": "apache/superset",
+          "stars": 74677,
+          "sector": "databases-storage",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "prometheus/prometheus",
+          "stars": 66005,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "tursodatabase/libsql",
+          "stars": 17208,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "mikefarah/yq",
+          "stars": 15934,
+          "sector": "cli-systems",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "go-sql-driver/mysql",
+          "stars": 15282,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "manticoresoftware/manticoresearch",
+          "stars": 11993,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "PRQL/prql",
+          "stars": 10910,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "jhspetersson/fselect",
+          "stars": 4458,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "duckdb/pg_duckdb",
+          "stars": 3222,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "duckdb/duckdb-wasm",
+          "stars": 2118,
+          "sector": "databases-storage",
+          "policy": "silent"
+        },
+        {
+          "full_name": "ContentSquare/chproxy",
+          "stars": 1481,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        }
+      ]
+    },
+    "harvest_fetch": {
+      "label": "harvest_fetch",
+      "description": "Crawl, archive, HTTP/gRPC/DNS fetch CLIs",
+      "count": 11,
+      "repos": [
+        {
+          "full_name": "scrapy/scrapy",
+          "stars": 64240,
+          "sector": "python-tooling",
+          "policy": "silent"
+        },
+        {
+          "full_name": "rclone/rclone",
+          "stars": 59639,
+          "sector": "cli-systems",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "mozilla/pdf.js",
+          "stars": 53846,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "Orange-OpenSource/hurl",
+          "stars": 19190,
+          "sector": "cli-systems",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "ImageMagick/ImageMagick",
+          "stars": 17367,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "ffuf/ffuf",
+          "stars": 16652,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "Y2Z/monolith",
+          "stars": 15466,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "fullstorydev/grpcurl",
+          "stars": 12803,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "ktr0731/evans",
+          "stars": 4493,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        },
+        {
+          "full_name": "mr-karan/doggo",
+          "stars": 4467,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "novnc/websockify",
+          "stars": 4446,
+          "sector": "networking-distributed",
+          "policy": "silent"
+        }
+      ]
+    },
+    "editor_agent_ux": {
+      "label": "editor_agent_ux",
+      "description": "Editors, remote DevEx, TUIs, shell UX",
+      "count": 35,
+      "repos": [
+        {
+          "full_name": "ohmyzsh/ohmyzsh",
+          "stars": 189625,
+          "sector": "cli-systems",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "microsoft/PowerToys",
+          "stars": 138490,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "microsoft/TypeScript",
+          "stars": 110981,
+          "sector": "compilers-runtimes",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "microsoft/terminal",
+          "stars": 104843,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "neovim/neovim",
+          "stars": 102213,
+          "sector": "editors-devex",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "nvbn/thefuck",
+          "stars": 97772,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "zed-industries/zed",
+          "stars": 89921,
+          "sector": "editors-devex",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "junegunn/fzf",
+          "stars": 82865,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "jesseduffield/lazygit",
+          "stars": 82122,
+          "sector": "cli-systems",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "coder/code-server",
+          "stars": 79236,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "Eugeny/tabby",
+          "stars": 74387,
+          "sector": "cli-systems",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "sharkdp/bat",
+          "stars": 60389,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "starship/starship",
+          "stars": 59811,
+          "sector": "cli-systems",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "jesseduffield/lazydocker",
+          "stars": 52756,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "prettier/prettier",
+          "stars": 52240,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "eslint/eslint",
+          "stars": 27499,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "asciinema/asciinema",
+          "stars": 17780,
+          "sector": "cli-systems",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "wtfutil/wtf",
+          "stars": 17077,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "rust-lang/rust-analyzer",
+          "stars": 16825,
+          "sector": "compilers-runtimes",
+          "policy": "disclosure"
+        },
+        {
+          "full_name": "davatorium/rofi",
+          "stars": 16375,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "lsd-rs/lsd",
+          "stars": 16214,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "winsiderss/systeminformer",
+          "stars": 15898,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "microsoft/pyright",
+          "stars": 15625,
+          "sector": "python-tooling",
+          "policy": "silent"
+        },
+        {
+          "full_name": "coder/coder",
+          "stars": 14399,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "amir20/dozzle",
+          "stars": 14300,
+          "sector": "devops-build",
+          "policy": "silent"
+        },
+        {
+          "full_name": "mawww/kakoune",
+          "stars": 11049,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "charmbracelet/freeze",
+          "stars": 4825,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "sayanarijit/xplr",
+          "stars": 4816,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "tmux-python/tmuxp",
+          "stars": 4572,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "dvorka/hstr",
+          "stars": 4455,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "orhun/binsider",
+          "stars": 4418,
+          "sector": "cli-systems",
+          "policy": "silent"
+        },
+        {
+          "full_name": "akiyosi/goneovim",
+          "stars": 2624,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "liuchengxu/vim-clap",
+          "stars": 2144,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "MordechaiHadad/bob",
+          "stars": 2141,
+          "sector": "editors-devex",
+          "policy": "silent"
+        },
+        {
+          "full_name": "vhakulinen/gnvim",
+          "stars": 1958,
+          "sector": "editors-devex",
+          "policy": "silent"
+        }
+      ]
+    }
+  },
+  "scenario_part_maps": {
+    "local_first_repro_lab": {
+      "sandbox": [
+        "google/gvisor",
+        "bytecodealliance/wasmtime",
+        "kubernetes-sigs/kind",
+        "dagger/dagger",
+        "jetify-com/devbox",
+        "testcontainers/testcontainers-go",
+        "youki-dev/youki"
+      ],
+      "workflow": [
+        "go-task/task",
+        "dagger/dagger",
+        "argoproj/argo-workflows",
+        "earthly/earthly",
+        "woodpecker-ci/woodpecker"
+      ],
+      "storage": [
+        "tursodatabase/libsql",
+        "benbjohnson/litestream",
+        "rclone/rclone",
+        "dgraph-io/badger",
+        "prometheus/prometheus"
+      ],
+      "harvest_fetch": [
+        "scrapy/scrapy",
+        "Y2Z/monolith",
+        "Orange-OpenSource/hurl",
+        "mozilla/pdf.js",
+        "mr-karan/doggo"
+      ],
+      "query_analytics": [
+        "mikefarah/yq",
+        "PRQL/prql",
+        "apache/superset",
+        "jhspetersson/fselect",
+        "duckdb/duckdb-wasm"
+      ],
+      "package_release": [
+        "astral-sh/uv",
+        "goreleaser/goreleaser",
+        "NixOS/nix",
+        "astral-sh/ruff",
+        "docker/buildx"
+      ],
+      "editor_agent_ux": [
+        "neovim/neovim",
+        "coder/coder",
+        "jesseduffield/lazygit",
+        "amir20/dozzle",
+        "asciinema/asciinema"
+      ],
+      "identity_tls": [
+        "FiloSottile/mkcert",
+        "smallstep/certificates"
+      ],
+      "tunnel_edge": [
+        "cloudflare/cloudflared",
+        "antoniomika/sish",
+        "openziti/zrok"
+      ],
+      "policy_scan": [
+        "ast-grep/ast-grep",
+        "wagoodman/dive",
+        "zizmorcore/zizmor"
+      ]
+    },
+    "supply_chain_verify_loop": {
+      "package_release": [
+        "goreleaser/goreleaser",
+        "ko-build/ko",
+        "docker/buildx",
+        "podman-container-tools/buildah",
+        "oras-project/oras",
+        "crev-dev/cargo-crev"
+      ],
+      "policy_scan": [
+        "quay/clair",
+        "kubescape/kubescape",
+        "kyverno/kyverno",
+        "zizmorcore/zizmor",
+        "wagoodman/dive",
+        "goodwithtech/dockle",
+        "aquasecurity/kube-bench",
+        "FairwindsOps/polaris",
+        "aquasecurity/trivy-operator"
+      ],
+      "workflow": [
+        "fluxcd/flux2",
+        "tektoncd/pipeline",
+        "argoproj/argo-workflows",
+        "GoogleContainerTools/skaffold"
+      ],
+      "identity_tls": [
+        "cert-manager/cert-manager",
+        "bitnami/sealed-secrets",
+        "golang-jwt/jwt"
+      ],
+      "storage": [
+        "codenotary/immudb",
+        "prometheus/prometheus"
+      ],
+      "sandbox": [
+        "google/gvisor",
+        "kubernetes-sigs/kind",
+        "dagger/dagger"
+      ],
+      "package_extra_from_atlas": [
+        "oras-project/oras"
+      ]
+    },
+    "zero_trust_personal_edge": {
+      "tunnel_edge": [
+        "openziti/ziti",
+        "openziti/zrok",
+        "fatedier/frp",
+        "antoniomika/sish",
+        "cloudflare/cloudflared",
+        "ginuerzh/gost",
+        "rathole-org/rathole",
+        "jpillora/chisel",
+        "pi-hole/pi-hole",
+        "NLnetLabs/unbound",
+        "coredns/coredns",
+        "octelium/octelium"
+      ],
+      "identity_tls": [
+        "pomerium/pomerium",
+        "FiloSottile/mkcert",
+        "dexidp/dex",
+        "zitadel/zitadel",
+        "oauth2-proxy/oauth2-proxy",
+        "smallstep/certificates",
+        "cert-manager/cert-manager",
+        "spiffe/spire",
+        "DefGuard/defguard"
+      ],
+      "storage": [
+        "rclone/rclone",
+        "drakkan/sftpgo",
+        "benbjohnson/litestream"
+      ],
+      "editor_agent_ux": [
+        "coder/code-server",
+        "coder/coder",
+        "Eugeny/tabby"
+      ],
+      "policy_scan": [
+        "kyverno/kyverno",
+        "kubescape/kubescape"
+      ],
+      "workflow": [
+        "go-task/task",
+        "fluxcd/flux2"
+      ]
+    }
+  },
+  "meta": {
+    "generated_for": "composition-gap-research",
+    "recommendation": "local_first_systems_engineering_lab",
+    "attempts_doc": "ATTEMPTS.md",
+    "report_doc": "REPORT.md",
+    "priority": "loop_standability_then_external_prior_art",
+    "proceed_total": 786
+  }
+}
