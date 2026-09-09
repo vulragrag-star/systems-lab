@@ -1,8 +1,8 @@
-# STATUS — P0 progress
+# STATUS — P0 + pursue scaffolds
 
 **Date:** 2026-09-09 (Asia/Shanghai)  
-**Scope:** PRIORITY.md P0 — Attempt **#1 labctl** harden + Attempt **#26 atlasgate** MVP  
-**Org:** research hub; sibling implementation repos mapped in [ORG.md](ORG.md). One pursue-candidate implementation at a time.
+**Scope:** PRIORITY.md P0 — Attempt **#1 labctl** harden + Attempt **#26 atlasgate** MVP; pursue-candidate **scaffolds complete**  
+**Org:** research hub; sibling implementation repos mapped in [ORG.md](ORG.md).
 
 ## Done
 
@@ -29,23 +29,30 @@
 ### Docs / git
 - [x] README quick-start with working commands
 - [x] This STATUS.md
-- [x] Commit + push to `origin/main` (`dc88ca1`)
+- [x] ORG.md Attempt → repo map
 
-## Sibling repos (see [ORG.md](ORG.md))
+## Sibling repos — pursue scaffolds **complete**
 
 | Attempt | Repo | Note |
 |---:|---|---|
 | #1 + #26 | **this repo** | labctl + atlasgate live here for now |
-| #23 | [contract-harness](https://github.com/vulragrag-star/contract-harness) | Creating now — next implementation focus |
-| #20 | `ops-evidence` | Planned |
-| #9 | `dataset-ledger` | Planned |
-| #13 / #29 / #19 | TBD | Planned later |
+| #23 | [contract-harness](https://github.com/vulragrag-star/contract-harness) | Scaffold live (`contractctl`) |
+| #20 | [ops-evidence](https://github.com/vulragrag-star/ops-evidence) | Scaffold live (`evidectl`) |
+| #9 | [dataset-ledger](https://github.com/vulragrag-star/dataset-ledger) | Scaffold live (`dsledger`) |
+| #13 | [docs-vault](https://github.com/vulragrag-star/docs-vault) | Scaffold live (`vaultctl`) |
+| #29 | [airgap-mirror](https://github.com/vulragrag-star/airgap-mirror) | Scaffold live (`mirrorctl`) |
+| #19 | [edge-workers-lab](https://github.com/vulragrag-star/edge-workers-lab) | Scaffold live (`edgectl`) |
 
-## Not in P0 (queued)
+**Sequence complete for pursue scaffolds** (2026-09-09). Next work is deepen-one-at-a-time, not more greenfield scaffolds.
+
+### Optional note — contract-harness
+MVP remains sufficient; no deepen in this pass (STATUS note only).
+
+## Not in P0 (queued deepen)
 - Full kind pod-exec / gVisor sandbox profiles
-- libsql/litestream ledger backend (#20 → `ops-evidence` sibling repo)
-- Contract harness (#23 → `contract-harness` sibling; one-at-a-time after P0)
-- Dataset ledger (#9 → `dataset-ledger` planned)
+- immudb optional backend for ops-evidence (#20)
+- Deeper contract scenarios / real grpcurl fixtures (#23)
+- Dataset transforms beyond register/bind (#9)
 
 ## Verify locally
 

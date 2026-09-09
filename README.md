@@ -13,7 +13,7 @@ This is **not** an LLM paper-writer or coding agent. Those can *use* the lab; th
 
 **systems-lab = research hub** (survey + ATTEMPTS / BACKLOG / PRIORITY). Each pursue-candidate gets its **own implementation sibling repo** under `vulragrag-star`. We pursue **one at a time**, without rushing.
 
-See **[docs/ORG.md](docs/ORG.md)** for the Attempt → repo mapping (`labctl`/`atlasgate` live here for now; `#23` → `contract-harness`; `#20`/`#9` planned; `#13`/`#29`/`#19` later).
+See **[docs/ORG.md](docs/ORG.md)** for the Attempt → repo mapping (`labctl`/`atlasgate` live here for now; pursue scaffolds `#23`/`#20`/`#9`/`#13`/`#29`/`#19` are live sibling repos).
 
 ## Research trail (read first)
 
@@ -25,13 +25,13 @@ See **[docs/ORG.md](docs/ORG.md)** for the Attempt → repo mapping (`labctl`/`a
 - [docs/STATUS.md](docs/STATUS.md) — P0 implementation progress + sibling-repo notes
 - [data/PARTS.json](data/PARTS.json) — atlas capability → repos
 
-**Multiple survivors.** Attempt 1 (systems lab) is P0, but the corrected methodology also keeps pursue-candidates such as atlasgate (#26), API contract harness (#23 → [contract-harness](https://github.com/vulragrag-star/contract-harness)), ops evidence (#20), dataset ledger (#9), docs vault (#13), airgap mirror (#29), and edge workers (#19). Occupied loops (Chainloop, Octelium, Coder, AdGuard Home, ArchiveBox, Kubescape, …) stay abandoned.
+**Multiple survivors.** Attempt 1 (systems lab) is P0, but the corrected methodology also keeps pursue-candidates with **live scaffolds**: atlasgate (#26, in-hub), [contract-harness](https://github.com/vulragrag-star/contract-harness) (#23), [ops-evidence](https://github.com/vulragrag-star/ops-evidence) (#20), [dataset-ledger](https://github.com/vulragrag-star/dataset-ledger) (#9), [docs-vault](https://github.com/vulragrag-star/docs-vault) (#13), [airgap-mirror](https://github.com/vulragrag-star/airgap-mirror) (#29), [edge-workers-lab](https://github.com/vulragrag-star/edge-workers-lab) (#19). Occupied loops (Chainloop, Octelium, Coder, AdGuard Home, ArchiveBox, Kubescape, …) stay abandoned.
 
 ## Status
 
 P0 MVP (in this hub): hardened `labctl` (init/run/replay/ledger/pins/deny-check) + sibling `atlasgate` (check-repo/trailer/scan-ci). Glue over Task/Dagger/kind/wasmtime is intentional — we assemble parts, we do not reimplement them.
 
-Next implementation focus (separate repo): Attempt **#23** [contract-harness](https://github.com/vulragrag-star/contract-harness) — multi-protocol API contract harness (Hurl + grpcurl + content-addressed run ledger). Not Speedscale.
+**Pursue scaffolds complete** (see [docs/STATUS.md](docs/STATUS.md) + [docs/ORG.md](docs/ORG.md)). Next: deepen one sibling at a time — not more greenfield scaffolds.
 
 Identity for commits: Jason Wang \<vulragrag@gmail.com\> / GitHub `vulragrag-star`.
 
