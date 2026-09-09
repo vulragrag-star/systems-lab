@@ -4,7 +4,7 @@ kind: Experiment
 metadata:
   name: hello-echo
 spec:
-  runtime: wasmtime   # or: kind | gvisor
+  runtime: wasmtime   # falls back to local if wasmtime missing / non-.wasm command
   command: ["echo", "systems-lab hello"]
   capture:
     stdout: true
