@@ -51,11 +51,13 @@ Parked modules (#6, #25, #28, #30) are noted as attachable, not ranked as P0 pro
 
 ## Suggested pursuit order (execution)
 
-1. Harden **#1 labctl** ledger + proceed pins (already scaffolded).
-2. Ship **#26 atlasgate** MVP (trailer + zizmor + leave deny) as sibling binary/data pack.
-3. Add **#23** contract harness scenarios into lab runs.
-4. Wire **#20** immudb evidence writer behind lab/atlasgate events.
-5. Prototype **#9** dataset identity on the same ledger.
-6. Queue **#13 / #29 / #19** after P0/P1 prove composition UX.
+**One implementation focus at a time** (research hub stays in systems-lab; each graduate gets a sibling repo — see [ORG.md](ORG.md)).
 
-Multiple survivors may be pursued **in this priority order**; do not pretend only one idea remains.
+1. Harden **#1 labctl** ledger + proceed pins (done in this hub).
+2. Ship **#26 atlasgate** MVP (trailer + zizmor + leave deny) — in-tree for now; may split later.
+3. **#23** → sibling repo [`vulragrag-star/contract-harness`](https://github.com/vulragrag-star/contract-harness) (creating now; Hurl + grpcurl + content-addressed run ledger).
+4. **#20** → planned sibling `vulragrag-star/ops-evidence` (immudb evidence writer).
+5. **#9** → planned sibling `vulragrag-star/dataset-ledger` (dataset identity on shared ledger ideas).
+6. Queue **#13 / #29 / #19** after P0/P1 prove composition UX (repos TBD later).
+
+Multiple survivors may be pursued **in this priority order**; do not pretend only one idea remains — but do not rush parallel greenfield repos.

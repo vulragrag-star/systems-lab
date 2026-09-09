@@ -1,7 +1,8 @@
 # STATUS — P0 progress
 
 **Date:** 2026-09-09 (Asia/Shanghai)  
-**Scope:** PRIORITY.md P0 — Attempt **#1 labctl** harden + Attempt **#26 atlasgate** MVP
+**Scope:** PRIORITY.md P0 — Attempt **#1 labctl** harden + Attempt **#26 atlasgate** MVP  
+**Org:** research hub; sibling implementation repos mapped in [ORG.md](ORG.md). One pursue-candidate implementation at a time.
 
 ## Done
 
@@ -30,10 +31,21 @@
 - [x] This STATUS.md
 - [x] Commit + push to `origin/main` (`dc88ca1`)
 
+## Sibling repos (see [ORG.md](ORG.md))
+
+| Attempt | Repo | Note |
+|---:|---|---|
+| #1 + #26 | **this repo** | labctl + atlasgate live here for now |
+| #23 | [contract-harness](https://github.com/vulragrag-star/contract-harness) | Creating now — next implementation focus |
+| #20 | `ops-evidence` | Planned |
+| #9 | `dataset-ledger` | Planned |
+| #13 / #29 / #19 | TBD | Planned later |
+
 ## Not in P0 (queued)
 - Full kind pod-exec / gVisor sandbox profiles
-- libsql/litestream ledger backend (#20 sibling)
-- Contract harness (#23), dataset ledger (#9)
+- libsql/litestream ledger backend (#20 → `ops-evidence` sibling repo)
+- Contract harness (#23 → `contract-harness` sibling; one-at-a-time after P0)
+- Dataset ledger (#9 → `dataset-ledger` planned)
 
 ## Verify locally
 
